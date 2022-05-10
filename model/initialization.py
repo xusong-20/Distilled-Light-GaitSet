@@ -14,7 +14,6 @@ def init_seeds(seed=0, cuda_deterministic=True):
     np.random.seed(seed)
     torch.manual_seed(seed)
     torch.cuda.manual_seed(seed)
-    #torch.cuda.manual_seed_all(seed)  #if you are using multi-GPU
     if cuda_deterministic:
         #slower more reproducible
         torch.backends.cudnn.deterministic = True
@@ -23,14 +22,11 @@ def init_seeds(seed=0, cuda_deterministic=True):
         #faster less reproducible
         torch.backends.cudnn.deterministic = False
         torch.backends.cudnn.deterministic = True
-    #torch.backends.cudnn.enabled = False #this solution might increase the memory usage since it will disable cudnn for other modules like Cov2d.
+    
  
-
-
 def initialize_data(config, train=False, test=False):
     print("Initializing data source...")
     train_source, test_source = load_data(**config['data'], cache=(train or test))
-    #_time1 = datetime.now()
     if train:
         print("Loading training data...")
         train_source.load_all_data()
@@ -81,7 +77,7 @@ def initialize_model(config, train_source, test_source):
     return m, model_param['save_name']
 
 
-def initialization(config,train=False,test=False):
+def initialization(config, train=False, test=False):
     print("Initialzing...")
     WORK_PATH = config['WORK_PATH']
     os.chdir(WORK_PATH)
