@@ -2,7 +2,7 @@ conf = {
     "WORK_PATH": "./work-distilled",
     "CUDA_VISIBLE_DEVICES": "0",
     "data": {
-        'dataset_path': "/public/home/songxu/dataset/casia-b/CASIAB64/",
+        'dataset_path': "your_path",
         'resolution': '64',
         'dataset': 'CASIA-B',
         'pid_num': 73,
