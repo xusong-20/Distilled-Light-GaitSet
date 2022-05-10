@@ -14,7 +14,7 @@ class GaitSet(nn.Module):
         self.batch_frame = None
 
         init_channels = 1
-        channels = [32,64,128]
+        channels = [32, 64, 128]
         
         self.block1 = nn.Sequential(
             nn.Conv2d(in_channels=init_channels, out_channels=channels[0], kernel_size=5, stride=1, padding=2, bias=False),
@@ -56,7 +56,7 @@ class GaitSet(nn.Module):
         )
         
         
-        self.bin_num = [1,2,4,8,16]
+        self.bin_num = [1, 2, 4, 8, 16]
         self.fc_bin = nn.ModuleList([nn.Linear(channels[2], self.hidden_dim, bias=False) for i in range(sum(self.bin_num)*2)])
 
         for m in self.modules():
