@@ -22,7 +22,6 @@ from .utils import TripletSampler
 from tqdm import tqdm
 
 
-
 class Model:
     def __init__(self,
                  distillation,
@@ -182,6 +181,7 @@ class Model:
         batch[0] = seqs
         return batch
 
+    
     def load_teacher_model(self, restore_iter):
         self.teacher_encoder.load_state_dict(torch.load(osp.join(
             'teacher', self.teacher_model_name,
@@ -242,12 +242,13 @@ class Model:
 
             if self.distillation:
                 lkd_loss_metric = self.lkdloss(fl_target, fl_output)
-                #gkd_loss_metric = self.gkdloss(sl_target, sl_output, target_label)
-                gkd_loss_metric = self.gkdloss_hard(sl_target, sl_output, target_label)
+                gkd_loss_metric = self.gkdloss(sl_target, sl_output, target_label)
+                #gkd_loss_metric = self.gkdloss_hard(sl_target, sl_output, target_label)
                 loss = full_loss_metric.mean() + self.dw * (lkd_loss_metric.mean() + gkd_loss_metric.mean())
             else:
                 loss = full_loss_metric.mean()
 
+                
             self.hard_loss_metric.append(hard_loss_metric.mean().data.cpu().numpy())
             self.full_loss_metric.append(full_loss_metric.mean().data.cpu().numpy())
             self.full_loss_num.append(full_loss_num.mean().data.cpu().numpy())
