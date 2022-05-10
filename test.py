@@ -11,8 +11,6 @@ import pickle
 import matplotlib.pyplot as plt
 
 
-
-
 def boolean_string(s):
     if s.upper() not in {'FALSE', 'TRUE'}:
         raise ValueError('Not a valid boolean string')
@@ -28,7 +26,6 @@ parser.add_argument('--cache', default=False, type=boolean_string,
                     help='cache: if set as TRUE all the test data will be loaded at once'
                          ' before the transforming start. Default: FALSE')
 opt = parser.parse_args()
-
 
 
 def de_diag(acc, each_angle=False):
@@ -54,8 +51,7 @@ for k in range(1):
         de_diag(acc[1, :, :, k]),
         de_diag(acc[2, :, :, k])))
     
-        
-
+    
 np.set_printoptions(precision=2, floatmode='fixed')
 for i in range(1):
     print('===Rank-%d of each angle (Exclude identical-view cases)===' % (i + 1))
