@@ -18,7 +18,7 @@ conf = {
         'lr_decay_rate':0.1,
         'optimizer_type': 'sgd',
         'momentum':0.9,
-        'weight_decay':0.0,
+        'weight_decay':0.0, #5e-4
         'hard_or_full_trip': 'full',
         'batch_size': (8, 16),
         'restore_iter': 0,
