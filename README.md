@@ -8,9 +8,6 @@ Before training or test, please make sure you have prepared the dataset and the 
 
 the silhouettes after pretreatment **MUST have a size of 64x64**.
 
-
-
-
 Futhermore, you also can test our code on [OU-MVLP Dataset](http://www.am.sanken.osaka-u.ac.jp/BiometricDB/GaitMVLP.html).
 
 ## Citation
