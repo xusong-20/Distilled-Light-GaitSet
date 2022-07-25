@@ -15,7 +15,7 @@ Please cite these papers in your publications if it helps your research:
 ```
 @article{song2022distilled,
   title={Distilled light GaitSet: Towards scalable gait recognition},
-  author={Song, Xu and Huang, Yan and Shan, Caifeng and Wang, Jilong and Chen, Yu},
+  author={Song, Xu and Huang, Yan and Huang, Yan and Shan, Caifeng and Wang, Jilong and Chen, Yu},
   journal={Pattern Recognition Letters},
   volume={157},
   pages={27--34},
