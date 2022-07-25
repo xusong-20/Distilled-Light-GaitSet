@@ -6,9 +6,8 @@ Before training or test, please make sure you have prepared the dataset
 
 the silhouettes after pretreatment **MUST have a size of 64x64**.
 
-Download [Parameters of GaitSet](https://github.com/AbnerHqC/GaitSet/tree/master/work/checkpoint/GaitSet)
+Download [Parameters of GaitSet](https://github.com/AbnerHqC/GaitSet/tree/master/work/checkpoint/GaitSet) into `work-distilled/teacher/GaitSet`
 
-put the paremeters of gaitset into .[work-distilled/teacher/GaitSet].
 
 Futhermore, you also can test our code on [OU-MVLP Dataset](http://www.am.sanken.osaka-u.ac.jp/BiometricDB/GaitMVLP.html).
 
