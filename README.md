@@ -1,4 +1,11 @@
-# Distilled-Light-GaitSet
+# Distilled Light GaitSet
+### Dataset & Preparation
+Download [CASIA-B Dataset](http://www.cbsr.ia.ac.cn/english/Gait%20Databases.asp)
+Before training or test, please make sure you have prepared the dataset
+the silhouettes after pretreatment **MUST have a size of 64x64**.
+Futhermore, you also can test our code on [OU-MVLP Dataset](http://www.am.sanken.osaka-u.ac.jp/BiometricDB/GaitMVLP.html).
+## Citation
+Please cite these papers in your publications if it helps your research:
 ```
 @article{SONG202227,
 title = {Distilled light GaitSet: Towards scalable gait recognition},
