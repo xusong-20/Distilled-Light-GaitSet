@@ -3,6 +3,7 @@
 Download [CASIA-B Dataset](http://www.cbsr.ia.ac.cn/english/Gait%20Databases.asp)
 
 Before training or test, please make sure you have prepared the dataset
+
 the silhouettes after pretreatment **MUST have a size of 64x64**.
 
 Download [Parameters of GaitSet](https://github.com/AbnerHqC/GaitSet/tree/master/work/checkpoint/GaitSet)
