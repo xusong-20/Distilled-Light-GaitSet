@@ -6,9 +6,9 @@ Download [Parameter files of GaitSet](https://github.com/AbnerHqC/GaitSet/tree/m
 
 Before training or test, please make sure you have prepared the dataset and the parameter files of GaitSet
 
-the silhouettes after pretreatment **MUST have a size of 64x64**.
+The silhouettes after pretreatment **MUST have a size of 64x64**
 
-Futhermore, you also can test our code on [OU-MVLP Dataset](http://www.am.sanken.osaka-u.ac.jp/BiometricDB/GaitMVLP.html).
+Futhermore, you also can test our code on [OU-MVLP Dataset](http://www.am.sanken.osaka-u.ac.jp/BiometricDB/GaitMVLP.html)
 
 ## Citation
 Please cite these papers in your publications if it helps your research:
