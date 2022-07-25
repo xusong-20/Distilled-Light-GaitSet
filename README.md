@@ -2,11 +2,13 @@
 ### Dataset & Preparation
 Download [CASIA-B Dataset](http://www.cbsr.ia.ac.cn/english/Gait%20Databases.asp)
 
-Before training or test, please make sure you have prepared the dataset
+Download [Parameters of GaitSet](https://github.com/AbnerHqC/GaitSet/tree/master/work/checkpoint/GaitSet) into `work-distilled/teacher/GaitSet`
+
+Before training or test, please make sure you have prepared the dataset and the parameters file of GaitSet
 
 the silhouettes after pretreatment **MUST have a size of 64x64**.
 
-Download [Parameters of GaitSet](https://github.com/AbnerHqC/GaitSet/tree/master/work/checkpoint/GaitSet) into `work-distilled/teacher/GaitSet`
+
 
 
 Futhermore, you also can test our code on [OU-MVLP Dataset](http://www.am.sanken.osaka-u.ac.jp/BiometricDB/GaitMVLP.html).
